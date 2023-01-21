@@ -1,0 +1,11 @@
+<h2 class="mx-5 my-2">Formulario Inicio de sesión</h2>
+<div class="mx-5 my-2">
+    {{#if error}}
+        <p class="text-danger">{{error}}</p>
+    {{/if}}
+    <form action="/login" method="POST">
+        <label>Nombre:</label>
+        <input class="form-control" type="text" name="name" placeholder="Ingresa tu Nombre"/>
+        <button type="submit" class="btn btn-info my-3">Iniciar sesión</button>
+    </form>
+</div>
